@@ -93,7 +93,7 @@ if (isset($_POST['add_to_cart'])) {
                     <!-- PRODUCT IMAGE -->
 
                     <img
-                        src="../images/product<?= $id ?>.jpg"
+                        src="../images/<?= htmlspecialchars($product['image']); ?>"
                         alt="<?= htmlspecialchars($product['name']); ?>"
                         class="product-image"
                     >
@@ -171,7 +171,7 @@ if (isset($_POST['add_to_cart'])) {
 
 <!-- =====================================================
      GO TO CART BUTTON
-     
+
      It appears only when something exists in the cart.
 ===================================================== -->
 

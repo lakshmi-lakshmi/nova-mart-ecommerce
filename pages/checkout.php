@@ -493,10 +493,11 @@ if (isset($_POST['place_order'])) {
 
                             <!-- PRODUCT IMAGE -->
 
-                            <img
-                                src="../images/product<?= $product_id ?>.jpg"
+                             <img
+                                src="../images/<?= htmlspecialchars($product['image']); ?>"
                                 alt="<?= htmlspecialchars($product['name']); ?>"
                             >
+                            
 
 
                             <!-- PRODUCT DETAILS -->

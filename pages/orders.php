@@ -258,10 +258,8 @@ $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
                             <img
-                                src="../images/product<?= $product_id; ?>.jpg"
-                                alt="<?= htmlspecialchars(
-                                    $product['name']
-                                ); ?>"
+                                src="../images/<?= htmlspecialchars($product['image']); ?>"
+                                alt="<?= htmlspecialchars($product['name']); ?>"
                             >
 
 

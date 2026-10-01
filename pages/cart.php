@@ -155,7 +155,7 @@ $cart = $_SESSION['cart'] ?? [];
                             <div class="cart-product-image">
 
                                 <img
-                                    src="../images/product<?= $product_id ?>.jpg"
+                                    src="../images/<?= htmlspecialchars($product['image']); ?>"
                                     alt="<?= htmlspecialchars($product['name']); ?>"
                                 >
 
